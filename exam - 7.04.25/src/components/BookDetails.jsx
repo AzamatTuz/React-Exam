@@ -9,9 +9,14 @@ export default function BookDetail() {
     const [detail, setDetail] = useState()
     useEffect(() => {
         async function getMore() {
-            const res = await axios.get(`https://67873274c4a42c916105d2fe.mockapi.io/api/onlineduken/books/${id}`)
-            setDetail(res.data)
-            console.log(res.data);
+            try {
+                const res = await axios.get(`https://67873274c4a42c916105d2fe.mockapi.io/api/onlineduken/books/${id}`)
+                setDetail(res.data)
+                console.log(res.data);
+            } catch (error) {
+                console.error(error);
+                
+            }
             
         }
 

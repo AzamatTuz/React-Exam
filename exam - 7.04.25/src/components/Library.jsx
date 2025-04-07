@@ -9,9 +9,14 @@ export default function Library() {
 
     useEffect(() => {
         async function getData() {
-            const res = await axios.get("https://67873274c4a42c916105d2fe.mockapi.io/api/onlineduken/books")
-            setBooks(res.data)
-            console.log(res.data);
+            try {
+                const res = await axios.get("https://67873274c4a42c916105d2fe.mockapi.io/api/onlineduken/books")
+                setBooks(res.data)
+                console.log(res.data);
+            } catch (error) {
+                console.error(error);
+                
+            }
             
             
         }
