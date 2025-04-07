@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 0 10px #cecece;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+form input {
+  width: 300px;
+  padding: 13px;
+  font-size: 16px;
+  background: #999999;
+  color: white;
+  border-radius: 10px;
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+form button {
+  padding: 10px 60px;
+  color: #fff;
+  background: #999999;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.4s all ease-in-out;
+
+  &:hover {
+    background: #727272;
+  }
+}
+
+.error {
+  color: rgb(255, 0, 0);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  background: #999999;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px #fff;
+}
+
+header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+  border-radius: 10px;
+
+  &:hover {
+    background: #727272;
+  }
+}
+
+
+.mainLibrary {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card img {
+  width: 300px;
+}
+
+.card {
+  width: 350px;
+  padding: 10px;
+  box-shadow: 0 0 10px #cecece;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-radius: 10px;
+}
+
+.more {
+  text-decoration: none;
+  color: #727272;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+  border-radius: 10px;
+  width: fit-content;
+
+  &:hover {
+    background: #727272;
+    color: #fff;
+  }
+}
+
+.mainDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.mainDetail section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 1000px;
+  box-shadow: 0 0 10px #cecece;
+  padding: 10px;
+}
+
+.mainDetail section article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainDetail section img {
+  width: 500px;
+}
